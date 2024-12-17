@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Pelaporan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <div class="flex min-h-screen">
+        
+        <div class="fixed w-64 h-screen bg-gradient-to-r from-red-500 to-red-300 p-6 text-white flex flex-col">
+            <div class="flex items-center gap-3 mb-8">
+                <img src="images/logo.png" class="w-10">
+                <h1 class="text-2xl font-semibold">Dashboard</h1>
+            </div>
+            
+            <nav class="space-y-3 flex-1">
+                <a href="#" class="block py-2 px-4 rounded-lg bg-red-600 hover:bg-red-700">Laporan Hari Ini</a>
+                <a href="#" class="block py-2 px-4 rounded-lg bg-red-600 hover:bg-red-700">History</a>
+                <a href="#" class="block py-2 px-4 rounded-lg bg-red-600 hover:bg-red-700">Hasil Kontak</a>
+            </nav>
+
+            <div class="mt-auto">
+                <a href="#" class="flex items-center gap-2 py-2 px-4 hover:bg-red-600 rounded-lg">
+                    <i class="ti ti-settings"></i>
+                    Settings
+                </a>
+                <a href="#" class="flex items-center gap-2 py-2 px-4 hover:bg-red-600 rounded-lg">
+                    <i class="ti ti-logout"></i>
+                    Logout
+                </a>
+            </div>
+        </div>
+      
+        <div class="flex-1 ml-64 p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold">HISTORY PELAPORAN</h2>
+                <div class="flex items-center gap-2">
+                    <div class="flex items-center">
+                        <img src="https://ui-avatars.com/api/?name=Sigma+Team" alt="Team" class="w-8 h-8 rounded-full">
+                        <span class="ml-2">Sigma Team</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mb-8 mx-7 flex justify-end">
+                <div class="relative">
+                    <input type="text" 
+                           placeholder="DD/MM/YY" 
+                           class="w-full max-w-md px-4 py-2 border border-red-300 rounded-lg focus:outline-none focus:border-red-500"
+                           id="dateSearch">
+                    <button class="absolute p-2">
+                        <i class=" ti ti-search"></i>
+                    </button>
+                </div>
+            </div>
+           
+            <div class="space-y-4" id="reportsList">
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                      <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-semibold text-white">Kejadian Perkelahian di Jalan</h3>
+                        <span class="text-sm text-white">30 Desember 2024, 22:45</span>
+                      </div>
+                      <p class="text-white">Jalan Tanjungpura, Pontianak</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                        <div class="flex justify-between items-start mb-2">
+                          <h3 class="text-lg font-semibold text-white">Orang Mencurigakan di Gang</h3>
+                          <span class="text-sm text-white">28 Desember 2024, 21:20</span>
+                        </div>
+                        <p class="text-white">Gang Melati, Pontianak</p>
+                    </div>
+                  
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                      <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-semibold text-white">Laporan Pencurian di Pasar</h3>
+                        <span class="text-sm text-white">27 Desember 2024, 08:15</span>
+                      </div>
+                      <p class="text-white">Pasar Tengah, Pontianak</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                        <div class="flex justify-between items-start mb-2">
+                          <h3 class="text-lg font-semibold text-white">Pencurian di Minimarket</h3>
+                          <span class="text-sm text-white">25 Desember 2024, 10:45</span>
+                        </div>
+                        <p class="text-white">Jalan Diponegoro, Pontianak</p>
+                      </div>
+                  
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                      <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-semibold text-white">Keributan di Area Pemukiman</h3>
+                        <span class="text-sm text-white">24 Desember 2024, 19:30</span>
+                      </div>
+                      <p class="text-white">Gang Flamboyan, Pontianak</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                        <div class="flex justify-between items-start mb-2">
+                          <h3 class="text-lg font-semibold text-white">Pencurian Kendaraan Bermotor</h3>
+                          <span class="text-sm text-white">22 Desember 2024, 13:40</span>
+                        </div>
+                        <p class="text-white">Jalan Ahmad Yani, Pontianak</p>
+                      </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                        <div class="flex justify-between items-start mb-2">
+                          <h3 class="text-lg font-semibold text-white">Laporkan Aksi Tawuran</h3>
+                          <span class="text-sm text-white">20 Desember 2024, 16:15</span>
+                        </div>
+                        <p class="text-white">Jalan Sisingamangaraja, Pontianak</p>
+                      </div>
+
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                        <div class="flex justify-between items-start mb-2">
+                          <h3 class="text-lg font-semibold text-white">Kejadian Pembobolan ATM</h3>
+                          <span class="text-sm text-white">18 Desember 2024, 02:30</span>
+                        </div>
+                        <p class="text-white">Jalan Gajahmada, Pontianak</p>
+                      </div>
+                  
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                      <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-semibold text-white">Laporkan Pencurian Sepeda Motor</h3>
+                        <span class="text-sm text-white">15 Desember 2024, 14:20</span>
+                      </div>
+                      <p class="text-white">Jalan Ahmad Yani, Pontianak</p>
+                    </div>
+                  
+                    <div class="bg-gradient-to-r from-red-300 to-red-500 rounded-xl p-6 transition-transform hover:scale-[1.02]">
+                      <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-semibold text-white">Orang Mencurigakan di Taman</h3>
+                        <span class="text-sm text-white">1 Desember 2024, 06:50</span>
+                      </div>
+                      <p class="text-white">Taman Alun Kapuas, Pontianak</p>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
